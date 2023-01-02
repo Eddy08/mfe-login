@@ -1,3 +1,6 @@
+# ng add @angular-architects/module-federation --project login --type remote --port 4201
+# Basic Angular Commands
+
 # Login
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
