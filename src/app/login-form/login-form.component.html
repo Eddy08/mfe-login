@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit(form.value)" [formGroup]="form">
+    <label for="user">Username / Email</label>
+    <input type="text" name="user" id="user" accesskey="u" tabindex="1" formControlName="user" required="true" />
+  
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" accesskey="p" tabindex="2" formControlName="password" required="true">
+  
+    <button type="submit" [disabled]="!form.valid">Login</button>
+  </form>
