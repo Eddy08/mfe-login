@@ -1,5 +1,6 @@
 <form (ngSubmit)="onSubmit(form.value)" [formGroup]="form">
-    <label for="user">Username / Email</label>
+    <label *ngIf="!(isEmail(form.value.user))" for="user">Username</label>
+    <label *ngIf="isEmail(form.value.user)" for="user">Email</label>
     <input type="text" name="user" id="user" accesskey="u" tabindex="1" formControlName="user" required="true" />
   
     <label for="password">Password</label>
