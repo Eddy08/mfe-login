@@ -16,7 +16,10 @@ export class LoginFormComponent {
     console.log(form);
   }
   isEmail(user: String): Boolean {
-    if (user.includes('@') && user.includes('.com')) return true;
-    else return false;
+    if (user.includes('@') && user.includes('.com')){
+      if(user.substring(user.indexOf('@'),user.indexOf('.com')).length>3)
+      return true;
+    } 
+     return false;
   }
 }
